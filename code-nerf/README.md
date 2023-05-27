@@ -29,6 +29,8 @@ conda activate code_nerf
 
 For ShapeNet-SRN dataset, you can download it from https://drive.google.com/drive/folders/1PsT3uKwqHHD2bEEHkIXB99AlIjtmrEiR
 
+Download and put it into the already created folder ../data
+
 ### Training
 
 ```
