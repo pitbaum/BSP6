@@ -9,4 +9,6 @@ The code base consists of 3 main sub folders:
   
   - code-nerf: Which assumes the installation of the codeNerf librarby which includes the results and the trained model for the visualization of the NIR convergence
               - location of all results: ./exps/data/runs/test
+ 
+ - Object id from the ShapeNet data set for evaluations from the main report: bd504539074e453721a08935eb37d792
              
