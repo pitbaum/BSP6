@@ -35,6 +35,13 @@ For ShapeNet-SRN dataset, you can download it from https://drive.google.com/driv
 python train.py --gpu <gpu_id> --save_dir <save_dir> --jsonfiles <jsonfile.json> --iters_crop 1000000 --iters_all 1200000
 ```
 
+Example of the command how it was used in this project: 
+```
+python train.py --gpu 0 --save_dir data/ --jsonfile srnchair.json --iters_crop 1000000 --iters_all 1200000
+```
+Assuming that the Shapenet data set has been downloaded beforehand in the folder ../data
+
+
 JSON files contain hyper-parameters as well as data directory. 'iters_crop' and 'iters_all' are number of iterations for both cropped and whole images.
 
 ### Optimizing
@@ -42,6 +49,11 @@ JSON files contain hyper-parameters as well as data directory. 'iters_crop' and 
 ```
 python optimize.py --gpu <gpu_id> --saved_dir <trained_dir>
 ```
+Example of how it was used in this project:
+```
+python optimize.py --gpu 0 --saved_dir data/ --tgt_instances 0 --splits test --jsonfile srnchair.json
+```
+Assuming that all of the test data folders have been deleted besides the one folder with the object inside that was tested on. (For easier access by id)
 
 The result will be stored in <trained_dir/test(_num)>, and each folder contains the progress of optimization, and the evaluation of test set. 
 The final optimized results and the quantitative evaluations are stored in 'trained_dir/test(_num)/codes.pth'
