@@ -1,0 +1,7 @@
+{
+  "instance_ids": [
+    1
+  ],
+  "lr": 0.01,
+  "lr_half_interval": 50
+}

@@ -1,0 +1,27 @@
+name: codenerf2
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python>=3.8
+  - pip
+  - pip:
+      - opencv-python
+      - tensorboard
+      - imageio
+      - imageio-ffmpeg
+      - lpips
+  - scipy
+  - numpy
+  - matplotlib
+  - pytorch==1.10.0
+  - torchvision==0.11.1
+  - scikit-image
+  - tqdm
+
+# Add the CUDA-specific dependencies
+# Replace "cudatoolkit=11.0" with the appropriate version for your system
+# You can find available versions using "conda search cudatoolkit"
+  - cudatoolkit=11.0
+  - cudnn
+
